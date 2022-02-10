@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC e hidratação</title>
+    <link rel="stylesheet" href="./src/stye.css">
+</head>
+<body>
+
+    <div class="container">
+        <main>
+            <h1>Informes saúde</h1>
+            <p>
+                Preencha todos os campos abaixo e consulte seu IMC e/ou a quantidade diária de ingestão de água recomendada para você.
+            </p>
+            
+            <section class="form">
+                <div class="name input">
+                    <input type="text" placeholder="Nome" autofocus/>
+                </div>
+                <div class="height input">
+                    <input type="number" placeholder="Altura"/>
+                </div>
+                <div class="age input">
+                    <input type="number" placeholder="Idade"/>
+                </div>
+                <div class="weight input">
+                    <input type="number" placeholder="Peso"/>
+                </div>
+
+                <div class="buttons">
+                    <button class="imc">Meu IMC</button>
+                    <button class="hydration">Minha hidratação recomendada</button>
+                </div>
+            </section>
+        </main>
+        <div class="image"></div>
+    </div>
+
+    <div class="popup-wrapper">
+        <div class="popup-imc">
+            <section class="imc">
+    
+            </section>
+        </div>
+    
+        <div class="popup-hydration">
+            <section class="hydration">
+    
+            </section>
+        </div>
+    </div>
+    <!--
+        existem outros fatoresa serem considerados como frequencia de exercícios físicos, temperatura ambiente. 
+        para mais informações, clique aqui
+        para uma maior, precisão procure um nutricionista. 
+    -->
+    
+    <script src="./src/scripts.js"></script>
+</body>
+</html>
