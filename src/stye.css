@@ -24,7 +24,14 @@ body{
     background-position: center;
 }
 
+.invisible{
+    display: none !important;
+}
+
+/*HOME*/
 .container{
+    /*visibility: hidden;*/
+    /*display: none;*/
     display: flex;
     flex-direction: row;
 
@@ -108,8 +115,74 @@ p{
     }
 }
 
+/*POPUP*/
+.popup-close-imc,
+.popup-close-hydration{
+    color: rgb(156, 31, 31);
+    font-weight: 550;
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 2rem;
+    border: solid rgba(255, 255, 255, .4) 2px;
+    border-radius: 50%;
+    padding: .1rem .5rem;
+}
+
+.popup-close-imc:hover,
+.popup-close-hydration:hover{
+    background-color: rgba(255, 255, 255, .4);
+}
+
+/*POPUP IMC*/
+.popup-imc{
+    /*display: none;*/
+    background: var(--background-container);
+    background-size: cover;
+    padding: 3.5rem;
+    border-radius: 5%;
+    font-size: 1.4rem;
+    color: var(--font);
+    width: 60%;
+    min-width: 350px;
+    position: relative;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.result{
+    margin-bottom: 2rem;
+}
 
 
 
+/*POPUP HIDRATAÇÃO*/
+
+.popup-hydration{
+    /*display: none;*/
+    background: var(--background-container);
+    background-size: cover;
+    padding: 3.5rem;
+    border-radius: 5%;
+    font-size: 1.4rem;
+    color: var(--font);
+    width: 60%;
+    min-width: 350px;
+    position: relative;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.result{
+    margin-bottom: 2rem;
+}
 
 

@@ -18,45 +18,44 @@
             
             <section class="form">
                 <div class="name input">
-                    <input type="text" placeholder="Nome" autofocus/>
+                    <input id="name" type="text" placeholder="Nome" autofocus/>
                 </div>
                 <div class="height input">
-                    <input type="number" placeholder="Altura"/>
+                    <input id="height" type="number" placeholder="Altura"/>
                 </div>
                 <div class="age input">
-                    <input type="number" placeholder="Idade"/>
+                    <input id="age" type="number" placeholder="Idade"/>
                 </div>
                 <div class="weight input">
-                    <input type="number" placeholder="Peso"/>
+                    <input id="weight" type="number" placeholder="Peso"/>
                 </div>
 
                 <div class="buttons">
                     <button class="imc">Meu IMC</button>
-                    <button class="hydration">Minha hidratação recomendada</button>
+                    <button class="hydration">Minha ingestão de água</button>
                 </div>
             </section>
         </main>
         <div class="image"></div>
     </div>
 
-    <div class="popup-wrapper">
-        <div class="popup-imc">
-            <section class="imc">
-    
-            </section>
-        </div>
-    
-        <div class="popup-hydration">
-            <section class="hydration">
-    
-            </section>
-        </div>
+    <div class="popup-imc invisible">
+            <div class="popup-close-imc">x</div>
+            <h1 class="title">IMC</h1>
+            <p class="content-imc"></p>
+            <p class="result-imc"></p>
+            <button class="button-popup-imc">Ver também minha ingestão de água recomendada</button>
     </div>
-    <!--
-        existem outros fatoresa serem considerados como frequencia de exercícios físicos, temperatura ambiente. 
-        para mais informações, clique aqui
-        para uma maior, precisão procure um nutricionista. 
-    -->
+    
+    <div class="popup-hydration invisible">
+            <div class="popup-close-hydration">x</div>
+            <h1 class="title">Quantidade de água recomendada</h1>
+            <p class="result-hydration"></p>
+            <p class="content-hydration">É importante informar que existem outros fatores a serem considerados como a frequencia de exercícios físicos, temperatura ambiente, entre outros. 
+                Para mais informações, clique aqui.
+                Para uma maior precisão, procure um nutricionista.</p>
+                <button class="button-popup-hydration">Ver também meu IMC</button>
+    </div>
     
     <script src="./src/scripts.js"></script>
 </body>
