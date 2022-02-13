@@ -10,9 +10,11 @@ body{
     --background-input: rgba(0, 0, 0, .2);
     --background-button: rgba(7, 92, 73, 0.7);
     --background-hover-button: rgba(7, 92, 73, 0.3);
+    --close: rgb(156, 31, 31);
+    --background-close: rgba(255, 255, 255, .4);
 
-    --background-image-body: url('./assets/background.jpg');
-    --background-image: url('./assets/image.jpg');
+    --background-image-body: url('./assets/background.webp');
+    --background-image: url('./assets/image.webp');
 
     display: flex;
     flex-direction: column;
@@ -29,9 +31,8 @@ body{
 }
 
 /*HOME*/
+
 .container{
-    /*visibility: hidden;*/
-    /*display: none;*/
     display: flex;
     flex-direction: row;
 
@@ -74,9 +75,14 @@ button{
     background-color: var(--background-button);
     padding: .5rem;
     color: var(--font);
-    margin-top: 2rem;
+    margin: 2rem 0 0 0;
     font-size: 1rem;
     cursor: pointer;
+}
+
+.button-popup-imc-new,
+.button-popup-hydration-new{
+    margin-right: 1rem;
 }
 
 button:hover{
@@ -87,6 +93,12 @@ button:hover{
     display: flex;
     justify-content: space-between;
 }
+
+button:disabled{
+    cursor: default;
+    opacity: 0.4;
+    pointer-events: none;
+} 
 
 .form{
     margin-top: 2rem;
@@ -108,6 +120,12 @@ p{
     }
 }
 
+@media (max-width: 680px) {
+    button{
+        margin: 1rem;
+    }
+}
+
 @media (max-width: 350px) {
     .container{
         width: 100%;
@@ -116,9 +134,10 @@ p{
 }
 
 /*POPUP*/
+
 .popup-close-imc,
 .popup-close-hydration{
-    color: rgb(156, 31, 31);
+    color: var(--close);
     font-weight: 550;
     position: absolute;
     top: 1.5rem;
@@ -126,19 +145,19 @@ p{
     cursor: pointer;
     font-family: sans-serif;
     font-size: 2rem;
-    border: solid rgba(255, 255, 255, .4) 2px;
+    border: solid var(--background-close) 2px;
     border-radius: 50%;
     padding: .1rem .5rem;
 }
 
 .popup-close-imc:hover,
 .popup-close-hydration:hover{
-    background-color: rgba(255, 255, 255, .4);
+    background-color: var(--background-close);
 }
 
 /*POPUP IMC*/
+
 .popup-imc{
-    /*display: none;*/
     background: var(--background-container);
     background-size: cover;
     padding: 3.5rem;
@@ -159,12 +178,9 @@ p{
     margin-bottom: 2rem;
 }
 
-
-
 /*POPUP HIDRATAÇÃO*/
 
 .popup-hydration{
-    /*display: none;*/
     background: var(--background-container);
     background-size: cover;
     padding: 3.5rem;

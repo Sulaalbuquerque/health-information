@@ -13,7 +13,7 @@
         <main>
             <h1>Informes saúde</h1>
             <p>
-                Preencha todos os campos abaixo e consulte seu IMC e/ou a quantidade diária de ingestão de água recomendada para você.
+                Preencha todos os campos abaixo e consulte seu IMC e/ou sua quantidade diária de ingestão hídrica recomendada.
             </p>
             
             <section class="form">
@@ -31,8 +31,8 @@
                 </div>
 
                 <div class="buttons">
-                    <button class="imc">Meu IMC</button>
-                    <button class="hydration">Minha ingestão de água</button>
+                    <button type="submit" class="imc" disabled>Meu IMC</button>
+                    <button type="submit" class="hydration" disabled>Minha ingestão de água</button>
                 </div>
             </section>
         </main>
@@ -40,21 +40,25 @@
     </div>
 
     <div class="popup-imc invisible">
-            <div class="popup-close-imc">x</div>
-            <h1 class="title">IMC</h1>
-            <p class="content-imc"></p>
-            <p class="result-imc"></p>
-            <button class="button-popup-imc">Ver também minha ingestão de água recomendada</button>
+        <div class="popup-close-imc">x</div>
+
+        <h1 class="title">IMC</h1>
+        <p class="content-imc"></p>
+        <p class="result-imc"></p>
+
+        <button class="button-popup-imc-new">Nova consulta</button>
+        <button class="button-popup-imc">Ver minha ingestão de água recomendada</button>
     </div>
     
     <div class="popup-hydration invisible">
-            <div class="popup-close-hydration">x</div>
-            <h1 class="title">Quantidade de água recomendada</h1>
-            <p class="result-hydration"></p>
-            <p class="content-hydration">É importante informar que existem outros fatores a serem considerados como a frequencia de exercícios físicos, temperatura ambiente, entre outros. 
-                Para mais informações, clique aqui.
-                Para uma maior precisão, procure um nutricionista.</p>
-                <button class="button-popup-hydration">Ver também meu IMC</button>
+        <div class="popup-close-hydration">x</div>
+
+        <h1 class="title">Quantidade de água recomendada</h1>
+        <p class="result-hydration"></p>
+        <p class="content-hydration"></p>
+
+        <button class="button-popup-hydration-new">Nova consulta</button>
+        <button class="button-popup-hydration">Ver meu IMC</button>
     </div>
     
     <script src="./src/scripts.js"></script>
