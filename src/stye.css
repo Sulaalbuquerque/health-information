@@ -80,18 +80,13 @@ button{
     cursor: pointer;
 }
 
-.button-popup-imc-new,
-.button-popup-hydration-new{
-    margin-right: 1rem;
+.buttons{
+    display: flex;
+    justify-content: space-between;
 }
 
 button:hover{
     background-color: var(--background-hover-button);
-}
-
-.buttons{
-    display: flex;
-    justify-content: space-between;
 }
 
 button:disabled{
@@ -99,6 +94,11 @@ button:disabled{
     opacity: 0.4;
     pointer-events: none;
 } 
+
+.button-popup-imc-new,
+.button-popup-hydration-new{
+    margin-right: 1rem;
+}
 
 .form{
     margin-top: 2rem;
