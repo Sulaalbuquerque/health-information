@@ -41,13 +41,13 @@ const enableButtons = () => {
     buttonHydration.disabled = true
 }
 
-const calcImc = () =>{//calcular imc
+const calcImc = () =>{
     const imc = (weight.value / (height.value * height.value)).toFixed(2)
     
     return imc
 }
 
-const invisibleContainer = () => {//tormar ocontainer invisível
+const invisibleContainer = () => {
     const containerInvisible = container.classList.contains('invisible')
     
     if(!containerInvisible){
@@ -55,13 +55,13 @@ const invisibleContainer = () => {//tormar ocontainer invisível
     }
 }
 
-const closePopup = () => {//fechar os popups
+const closePopup = () => {
     container.classList.remove('invisible')
     popupImc.classList.add('invisible')
     popupHydration.classList.add('invisible')
 }
 
-const showImc = () => {//abrir popup imc
+const showImc = () => {
     const informImc = 'A classificação do IMC (índice de massa corporal) pode ajudar a identificar obesidade ou desnutrição. Para informações mais precisas, consulte seu médico ou nutricionista.'
     const informResultImc = ' Esse resultado é classificado como'
 
@@ -86,7 +86,7 @@ const showImc = () => {//abrir popup imc
       } 
 }
 
-const showHydration = () =>{//abrir popup hydration
+const showHydration = () =>{
     const informHydration = 'É importante informar que existem outros fatores a serem considerados como a frequência de exercícios físicos, temperatura ambiente, entre outros. Para uma maior precisão, procure seu médico ou nutricionista.'
 
     let mlPerKg 
@@ -125,7 +125,7 @@ const showHydration = () =>{//abrir popup hydration
     }
 }
 
-const redirectPopup = () => {//redirecionar o popup
+const redirectPopup = () => {
     const popupImcInvisible = popupImc.classList.contains('invisible')
     const popupHydrationInvisible = popupHydration.classList.contains('invisible')
 
