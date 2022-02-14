@@ -62,9 +62,8 @@ const closePopup = () => {//fechar os popups
 }
 
 const showImc = () => {//abrir popup imc
-    const informImc = 'A classificação do IMC (índice de massa corporal) pode ajudar a identificar obesidade ou desnutrição.'
+    const informImc = 'A classificação do IMC (índice de massa corporal) pode ajudar a identificar obesidade ou desnutrição. Para informações mais precisas, consulte seu médico ou nutricionista.'
     const informResultImc = ' Esse resultado é classificado como'
-    const recommendation = 'Para informações mais precisas, consulte seu médico ou nutricionista.'
 
     invisibleContainer()
 
@@ -73,17 +72,17 @@ const showImc = () => {//abrir popup imc
     resultImc.innerText = `${name.value}, seu IMC é de ${calcImc()} kg/m².`
 
     if (calcImc() <= 18.5) {
-        resultImc.innerText += `${informResultImc} abaixo do peso. ${recommendation}`
+        resultImc.innerText += `${informResultImc} abaixo do peso.`
       } else if (calcImc() <= 25) {
-        resultImc.innerText += `${informResultImc} peso ideal. Parabéns! ${recommendation}`
+        resultImc.innerText += `${informResultImc} peso ideal. Parabéns!`
       } else if (calcImc() <= 30) {
-        resultImc.innerText += `${informResultImc} levemente acima do peso. ${recommendation}`
+        resultImc.innerText += `${informResultImc} levemente acima do peso.`
       } else if (calcImc() <= 35) {
-        resultImc.innerText += `${informResultImc} obesidade grau I. ${recommendation}`
+        resultImc.innerText += `${informResultImc} obesidade grau I.`
       } else if (calcImc() <= 40) {
-        resultImc.innerText += `${informResultImc} obesidade grau II. ${recommendation}`
+        resultImc.innerText += `${informResultImc} obesidade grau II.`
       } else {
-        resultImc.innerText += `${informResultImc} obesidade grau III. ${recommendation}`
+        resultImc.innerText += `${informResultImc} obesidade grau III.`
       } 
 }
 
