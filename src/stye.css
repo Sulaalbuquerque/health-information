@@ -11,7 +11,7 @@ body{
     --background-button: rgba(7, 92, 73, 0.7);
     --background-hover-button: rgba(7, 92, 73, 0.3);
     --close: rgb(156, 31, 31);
-    --background-close: rgba(255, 255, 255, .4);
+    --background-close: rgb(177, 192, 184);/*rgba(255, 255, 255, .4)*/
 
     --background-image-body: url('./assets/background.webp');
     --background-image: url('./assets/image.webp');
